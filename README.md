@@ -31,7 +31,7 @@ A multi-platform, serverless chatbot skeleton, featuring **Chatbase** (analytics
  5. Choose `Restore from zip`
  6. Select the `.zip` file created at step #2
 
-### Deploying the bot on AWS Lambda
+### Deploying the bot to AWS Lambda
 
 Being based on `Claudia.JS` tools and bot framework, deploying the bot is a simple and straightforward operation. Please refer to the [official `claudia-bot-builder` tutorial](https://claudiajs.com/tutorials/hello-world-chatbot.html), paragraph: **Deploying the bot**.
 
@@ -56,7 +56,7 @@ Run: `$ ./node_modules/.bin/claudia create --help` from the `/src` directory for
 
 ## A note on vendorized dependencies
 
-This project contains a copy of the libraries files. This practice is known as "vendoring" and is not generally considered a best practice, but an annoying and dangerous incident happened not even long ago in the `Node.JS` community made me re-evaluate it. You can find good coverage of the incident searching for: _"node.js broke the internet"_, such as:
+This project includes a local copy of its dependencies, stored in the `/src/node_modules` directory. This practice is known as _"vendoring"_ and is not generally considered a best practice, but an annoying and dangerous incident happened not even long ago in the `Node.JS` community made me re-evaluate it. You can find good coverage of the incident searching for: _"node.js broke the internet"_, such as:
 
  * http://www.businessinsider.com/npm-left-pad-controversy-explained-2016-3
  * http://www.zdnet.com/article/disgruntled-developer-breaks-thousands-of-javascript-node-js-apps/
