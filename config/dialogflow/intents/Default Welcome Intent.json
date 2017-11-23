@@ -1,0 +1,36 @@
+{
+  "id": "0",
+  "name": "Default Welcome Intent",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "action": "input.welcome",
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "en",
+          "speech": [
+            "Hi! I am just a test bot, but can ask me to show you some magic if you want 😉",
+            "Hello there! Why don\u0027t you ask me to show you some magic? Even a test bot knows a few tricks 😄",
+            "Greetings! Test bot at your service. Just ask me to show you some magic 😎"
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [
+    {
+      "name": "WELCOME"
+    }
+  ]
+}
