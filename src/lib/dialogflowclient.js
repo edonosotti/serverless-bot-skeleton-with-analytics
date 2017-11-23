@@ -3,11 +3,12 @@
 const promisify = require('promisify-event');
 const apiai = require('apiai');
 
-function DialogflowClient(clientAccessToken) {
+function DialogflowClient(clientAccessToken, _options) {
   // ========================================
   // PRIVATE PROPERTIES
   // ========================================
-  var client = apiai(clientAccessToken);
+  var options = _options || {};
+  var client = apiai(clientAccessToken, options);
 
   // ========================================
   // PRIVATE METHODS
@@ -26,7 +27,7 @@ function DialogflowClient(clientAccessToken) {
 
   var parseText = function(message) {
     var request = client.textRequest(message.text, {
-        sessionId: message.sender
+        sessionId: message.type + '-' + message.sender
     });
 
     var response = promisify(request, 'response');
@@ -43,6 +44,7 @@ function DialogflowClient(clientAccessToken) {
         return {
           success: true,
           lang: data.lang,
+          type: message.type,
           intent: data.result.action,
           parameters: data.result.parameters,
           responses: parseCannedResponses(data.result)
