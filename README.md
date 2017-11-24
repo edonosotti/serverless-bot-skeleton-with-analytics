@@ -1,5 +1,7 @@
 # serverless-chatbase-dialogflow-bot-skeleton
 
+[![codebeat badge](https://codebeat.co/badges/ecc2ce3e-4d42-428d-be61-296daad8c38f)](https://codebeat.co/projects/github-com-edonosotti-serverless-chatbase-dialogflow-bot-skeleton-master)
+
 ## Description
 
 A multi-platform, serverless chatbot skeleton, featuring **Chatbase** (analytics) and **Dialogflow** (Natural Language Processing) integration.
