@@ -1,10 +1,20 @@
-[![codebeat badge](https://codebeat.co/badges/ecc2ce3e-4d42-428d-be61-296daad8c38f)](https://codebeat.co/projects/github-com-edonosotti-serverless-chatbase-dialogflow-bot-skeleton-master)
+[![codebeat badge](https://codebeat.co/badges/62b14117-5fd6-4672-998f-f02fd2c4eb82)](https://codebeat.co/projects/github-com-edonosotti-serverless-bot-skeleton-with-analytics-master)
 
-# serverless-chatbase-dialogflow-bot-skeleton
+# serverless-bot-skeleton-with-analytics
 
 ## Description
 
-A multi-platform, serverless chatbot skeleton, featuring **Chatbase** (analytics) and **Dialogflow** (Natural Language Processing) integration.
+A multi-platform, serverless chatbot skeleton, with support for Natural Language Processing services, Sentiment Analysis and Analytics.
+
+Available integrations:
+
+ * **Chatbase** (analytics)
+ * **Dialogflow** (Natural Language Processing)
+
+Upcoming integrations:
+
+ * **Amazon Comprehend** (analytics) + **Amazon Translate** (translation)
+ * **Amazon Lex** (Natural Language Processing)
 
 ## Features
 
